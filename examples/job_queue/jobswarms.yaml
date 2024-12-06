@@ -1,0 +1,17 @@
+workdir: .
+name: job
+run: |
+  timestamp=$(date +%s)
+  #pipx install fastapi
+  #python3 /opt/swarms/api/agent_api.py
+  #python3 /opt/swarms/api/agent_api.py
+  # ls ~/sky_workdir readable
+  cp ~/sky_workdir/run.sh /var/task/agent_workspace/run.sh
+
+  #whoami root
+  #rm -rf   /var/task/agent_workspace/.venv/
+  mkdir -p /var/task/logs
+  chown -R swarms:swarms /var/task/ /home/swarms
+  chmod +x /var/task/agent_workspace/run.sh
+
+  su -c "bash -x /var/task/agent_workspace/run.sh" swarms

@@ -1,10 +1,6 @@
-# A task submitted to an existing cluster.
-#
-# Runs a task on a existing cluster.
-#
-# Usage:
-#   sky launch -c jq cluster.yaml
-#   sky exec jq job.yaml
+workdir: .
+#~/2024/07/11/skypilot/examples/job_queue/
+# /var/task/workdir/
 
 name: job
 
@@ -20,11 +16,28 @@ run: |
   # conda env list
   #pip install swarms
   sudo apt update
-  sudo apt install -y git
-  sudo apt install -y pipx
-  pipx ensurepath
+  sudo apt install -y git virtualenv
+  #    sudo apt install -y lsof
+  #pipx
+  #pipx ensurepath
   #pip install -e git+https://github.com/meta-introspector/swarms.git@feature/experiment1#egg=swarms
   rm -rf ./src/swarms # oops
-  pipx install -e git+https://github.com/jmikedupont2/swarms@skypilot#egg=swarms
+  #pipx install -e git+https://github.com/jmikedupont2/swarms@skypilot#egg=swarms
+
+  useradd swarms
+  if [ ! -f /opt/swarms/ ];
+  then
+    git clone https://github.com/jmikedupont2/swarms /opt/swarms/
+  fi	
+
+  # where the task will run
+  mkdir -p /var/task/agent_workspace/
+  mkdir -p /home/swarms
+  
   # FIXME: why do we need this? need to find where its introduced
   #pip uninstall --yes asyncio
+
+  chown -R swarms:swarms /var/task/agent_workspace /home/swarms
+  chmod +x /var/task/agent_workspace/run.sh
+  
+ 
