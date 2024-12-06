@@ -7,5 +7,6 @@
 #   sky exec djq job_docker.yaml
 
 resources:
-  accelerators: T4
-  image_id: docker:ubuntu:20.04
+#  accelerators: T4
+  image_id: docker:ubuntu:24.04
+  instance_type: t3.medium

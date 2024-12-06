@@ -1,0 +1,30 @@
+# A task submitted to an existing cluster.
+#
+# Runs a task on a existing cluster.
+#
+# Usage:
+#   sky launch -c jq cluster.yaml
+#   sky exec jq job.yaml
+
+name: job
+
+#resources:
+#  accelerators: T4:0.5
+
+setup: |
+  echo "running setup"
+  pip install swarms
+
+run: |
+  timestamp=$(date +%s)
+  # conda env list
+  #pip install swarms
+  sudo apt update
+  sudo apt install -y git
+  sudo apt install -y pipx
+  pipx ensurepath
+  #pip install -e git+https://github.com/meta-introspector/swarms.git@feature/experiment1#egg=swarms
+  rm -rf ./src/swarms # oops
+  pipx install -e git+https://github.com/jmikedupont2/swarms@skypilot#egg=swarms
+  # FIXME: why do we need this? need to find where its introduced
+  #pip uninstall --yes asyncio
