@@ -17,7 +17,8 @@ run: |
     git clone https://github.com/jmikedupont2/swarms /opt/swarms/
   fi
   
-  if [ ! -d /opt/swarms-memort/ ];
+  if [ ! -d /opt/swarms-memory/ ];
+  then
     git clone https://github.com/The-Swarm-Corporation/swarms-memory /opt/swarms-memory
   fi
   
@@ -26,5 +27,4 @@ run: |
   mkdir -p /home/swarms
   chown -R swarms:swarms /var/task/agent_workspace /home/swarms
 
-  
  

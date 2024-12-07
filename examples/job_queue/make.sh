@@ -26,6 +26,7 @@ do echo
        -y \
        -c swarms \
        --image-id $AMI \
+       --ports 8000 \
        --region=$REGION \
        --memory=8+ \
        cluster_docker.yaml
