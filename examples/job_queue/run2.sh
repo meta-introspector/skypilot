@@ -8,10 +8,10 @@ then
 fi
 #ls /var/task/agent_workspace/.venv/bin/activate
 . /var/task/agent_workspace/.venv/bin/activate
-pip install fastapi loguru pydantic uvicorn  termcolor
+#pip install fastapi loguru pydantic uvicorn  termcolor
 
 # install wr
-pip install -e /opt/swarms/
+#pip install -e /opt/swarms/
 # pip install swarms # failed on opencv
 # pip install dotenv
 

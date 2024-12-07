@@ -1,0 +1,8 @@
+workdir: .
+name: job
+run: |
+  timestamp=$(date +%s)
+  git clone https://github.com/The-Swarm-Corporation/swarms-memory /opt/swarms-memory
+
+  cp ~/sky_workdir/run2.sh /var/task/agent_workspace/run2.sh
+  su -c "bash -x /var/task/agent_workspace/run2.sh" swarms
