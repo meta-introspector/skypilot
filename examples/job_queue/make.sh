@@ -24,6 +24,7 @@ do echo
    sky launch -t $instance_size \
        --use-spot \
        -y \
+       --retry-until-up \
        -c swarms \
        --image-id $AMI \
        --ports 8000 \
