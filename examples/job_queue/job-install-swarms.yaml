@@ -16,6 +16,10 @@ run: |
   then
     git clone https://github.com/jmikedupont2/swarms /opt/swarms/
   fi
+
+  pushd /opt/swarms/
+  git checkout skypilot # switch branches
+  popd
   
   if [ ! -d /opt/swarms-memory/ ];
   then
