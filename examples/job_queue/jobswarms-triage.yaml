@@ -1,0 +1,6 @@
+# ! env sky exec swarms jobswarms-triage.yaml
+workdir: .
+name: job
+run: |
+  timestamp=$(date +%s)
+  su -c "bash -x /var/task/agent_workspace/run.sh" swarms

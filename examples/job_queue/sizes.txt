@@ -1,0 +1,75 @@
+now convert this into a makefile that tests each version of 
+| us-east-1 | T4g.nano-Linux        | 1yr     | 0.0042  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | T3a.nano-Linux        | 1yr     | 0.0047  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | t3.nano-Linux         | 1yr     | 0.0052  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | T3.nano-Linux         | 1yr     | 0.0052  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | t2.nano-Linux         | 1yr     | 0.0058  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | T4g.micro-Linux       | 1yr     | 0.0084  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | T3a.micro-Linux       | 1yr     | 0.0094  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | t3.micro-Linux        | 1yr     | 0.0104  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | T3.micro-Linux        | 1yr     | 0.0104  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | t2.micro-Linux        | 1yr     | 0.0116  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | T4g.small-Linux       | 1yr     | 0.0168  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | T3a.small-Linux       | 1yr     | 0.0188  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | t3.small-Linux        | 1yr     | 0.0208  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | T3.small-Linux        | 1yr     | 0.0208  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | t2.small-Linux        | 1yr     | 0.023   |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | T4g.medium-Linux      | 1yr     | 0.0336  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | T3a.medium-Linux      | 1yr     | 0.0376  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | m6g.medium-Linux      | 1yr     | 0.0385  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | m7g.medium-Linux      | 1yr     | 0.0408  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | t3.medium-Linux       | 1yr     | 0.0416  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | T3.medium-Linux       | 1yr     | 0.0416  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | m8g.medium-Linux      | 1yr     | 0.04488 |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | m6gd.medium-Linux     | 1yr     | 0.0452  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | t2.medium-Linux       | 1yr     | 0.0464  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | m7gd.medium-Linux     | 1yr     | 0.0534  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | m7a.medium-Linux      | 1yr     | 0.05796 |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | T4g.large-Linux       | 1yr     | 0.0672  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | T3a.large-Linux       | 1yr     | 0.0752  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | m6g.large-Linux       | 1yr     | 0.077   |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | m7g.large-Linux       | 1yr     | 0.0816  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | t3.large-Linux        | 1yr     | 0.0832  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | T3.large-Linux        | 1yr     | 0.0832  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | c5.large-Linux        | 1yr     | 0.085   |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | m5a.large-Linux       | 1yr     | 0.086   |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | m6a.large-Linux       | 1yr     | 0.0864  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | m8g.large-Linux       | 1yr     | 0.08976 |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | m6gd.large-Linux      | 1yr     | 0.0904  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | t2.large-Linux        | 1yr     | 0.0928  |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | m7i-flex.large-Linux  | 1yr     | 0.09576 |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | m5.large-Linux        | 1yr     | 0.096   |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | m6i.large-Linux       | 1yr     | 0.096   |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+| us-east-1 | c4.large-Linux        | 1yr     | 0.1     |                 |                 |                  |                  |                  |                  |                  |                  |                   |                   |                   |                   |
+
+Code review:
+
+This table shows the on-demand Linux EC2 instance costs for various instance types in the us-east-1
+(N. Virginia) region, calculated for a one-year period.
+
+To quickly summarize some key information from this table:
+
+1. The cost starts at approximately $0.0042 per hour for T4g.nano and goes up to around $0.10 per
+hour for m7a.medium.
+
+This table provides a comprehensive overview of pricing for various Linux instance types in the US
+East (N. Virginia) region, allowing you to compare costs and choose an appropriate instance type
+based on your requirements and budget.
+
+2. t3 instances are generally cheaper than equivalent T3A or T4G types:
+   - t3.micro: $0.0104/hour
+   - t3.small: $0.0208/hour
+
+3. T3A is slightly more expensive than T3 for most instance sizes:
+   - t3a.micro: $0.0094/hour
+   - t3a.small: $0.0188/hour
+
+4. T4G instances are the least expensive options overall, followed closely by m6g and m7g:
+   - T4g nano: $0.0042/hour
+   - M6G medium: $0.0385/hour
+   - M7G medium: $0.0408/hour
+
+5. As instance size increases, the cost per hour also increases:
+   - t2.micro: $0.0116/hour
+   - T4g.large-Linux: $0.0672/hour
+   - c5.large: $0.085/hour

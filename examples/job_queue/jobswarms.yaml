@@ -1,0 +1,9 @@
+workdir: .
+name: job
+run: |
+  timestamp=$(date +%s)
+  cp ~/sky_workdir/run.sh /var/task/agent_workspace/run.sh
+  mkdir -p /var/task/logs
+  chmod +x /var/task/agent_workspace/run.sh
+  chown -R swarms:swarms /var/task/ /home/swarms /opt/swarms
+  su -c "bash -x /var/task/agent_workspace/run.sh" swarms
